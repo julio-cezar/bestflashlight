@@ -1,0 +1,205 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayoutDash"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" 
+	android:background="#263238">
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal" >      
+    </LinearLayout>
+    
+    <!-- <ScrollView
+         android:id="@+id/meuscroll1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/LinearLayout1"
+         android:background="#263238" >
+         
+         <LinearLayout
+	        android:id="@+id/linearLayout2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="314dp"
+	        android:layout_marginTop="30dp"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+       
+             <LinearLayout
+	            style="@style/style_layout" >
+	
+	            
+	
+	            
+                        
+       		 </LinearLayout>
+       		 
+       		 <LinearLayout
+            style="@style/style_layout"
+            android:layout_marginTop="30dp" >
+
+            
+            
+        </LinearLayout>  -->
+        <ScrollView
+         android:id="@+id/meuscroll1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/LinearLayout1"
+         android:background="#263238" >
+         
+         <LinearLayout
+	        android:id="@+id/linearLayout2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="314dp"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+       
+             <LinearLayout style="@style/style_layout" >
+
+                 
+
+                 <LinearLayout
+                     style="@style/style_layout_botoes"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" >
+
+                     <Button
+	                	 android:id="@+id/bt_flash"
+	                	 style="@style/style_botoes"
+	                	 android:background="@drawable/seletor_lantarna"
+	                	 android:onClick="selecionarOpcao" />
+                     
+                     <TextView
+                         style="@style/style_text_botoes"
+                         android:text="@string/flashlight" />
+                 
+                 </LinearLayout>
+                 
+                 
+                 <TextView
+                     
+                     android:layout_width="35dp"
+                     android:layout_height="wrap_content"/>
+                
+                 <LinearLayout
+                     style="@style/style_layout_botoes"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" >
+
+                     <Button
+	                	 android:id="@+id/bt_screen"
+	                	 style="@style/style_botoes"
+	                	 android:background="@drawable/seletor_screen"
+	                	 android:onClick="selecionarOpcao" />
+             
+                     <TextView
+                         style="@style/style_text_botoes"
+                         android:text="@string/screen" />
+                 
+                 </LinearLayout>
+
+                 </LinearLayout>
+                 
+             <TextView
+                     
+                     android:layout_width="wrap_content"
+                     android:layout_height="35dp"/>
+                 
+             <LinearLayout style="@style/style_layout" >
+
+                 <LinearLayout
+                     style="@style/style_layout_botoes"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" >
+
+                     <Button
+                		 android:id="@+id/bt_color"
+                		 style="@style/style_botoes"
+                		 android:background="@drawable/seletor_color"
+                		 android:onClick="selecionarOpcao" />
+
+                     <TextView
+                         style="@style/style_text_botoes"
+                		 android:text="@string/colorscreen" />
+                 
+                 </LinearLayout>
+                 <TextView
+                     
+                     android:layout_width="35dp"
+                     android:layout_height="wrap_content"/>
+                
+                 <LinearLayout
+                     style="@style/style_layout_botoes"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" >
+
+                    <Button
+                		android:id="@+id/bt_doacao"
+                		style="@style/style_botoes"
+                		android:background="@drawable/seletor_juice"
+                		android:onClick="selecionarOpcao"/>
+             
+                     <TextView
+                        style="@style/style_text_botoes"
+                        android:text="@string/payjuice" />
+                 
+                 </LinearLayout>
+            </LinearLayout>
+            
+             <TextView
+                     
+                     android:layout_width="wrap_content"
+                     android:layout_height="20dp"/>
+
+             	<LinearLayout
+                     style="@style/style_layout_botoes"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content" >
+
+                     <Button
+           				 android:id="@+id/button1"
+           				 style="@style/style_botoes"
+                		 android:background="@drawable/seletor_shake"
+           				 android:onClick="toggleSensor"/>
+
+                     <TextView
+                         style="@style/style_text_botoes"
+                		 android:text="@string/sensor" />
+                 
+                 
+                 
+                 </LinearLayout>
+
+                 </LinearLayout>               
+             
+             
+         
+      </ScrollView>
+      
+      
+       <FrameLayout
+         android:id="@+id/propaganda"
+         android:layout_width="fill_parent"
+         android:layout_height="50dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true">
+         
+       <com.google.android.gms.ads.AdView
+           android:id="@+id/adView"
+           android:layout_width="fill_parent"
+           android:layout_height="50dp" 
+           ads:adSize="BANNER"
+           ads:adUnitId="ca-app-pub-7040951679419231/2112623107"/>
+       
+     </FrameLayout>
+
+       
+
+</RelativeLayout>

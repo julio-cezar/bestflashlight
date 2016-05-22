@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Best Flashlight</string>
+    <string name="title_activity_dashboard">Melhor Lanterna</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_flash">Lanterna de LED</string>
+    <string name="title_activity_screen">Tela como Lanterna</string>
+    <string name="title_activity_color_screen">Tela em COR</string>
+    <string name="title_activity_donation">Doação</string>
+    <string name="title_activity_color_dashboard">Escolha a Cor</string>
+    
+	<string name="flashlight">Lanterna</string>
+	<string name="donationText">Os desenvolvedores desse app amam suco de maracujá e de laranja. Se você gostou desse aplicativo sinta-se livre para nos pagar um suco :)</string>
+ 	<string name="screen">Tela</string>
+ 	<string name="colorscreen">Tela em Cores</string>
+ 	<string name="payjuice">Pague 1 suco</string>
+ 	<string name="sensor">Sensor Movimento</string>
+ 	
+ 	<string name="donate1">Doe R$04,00</string>
+ 	<string name="donate2">Doe R$20,00</string>
+ 	<string name="donate3">Doe R$80,00</string>
+ 	<string name="colorclick">Clique na tela :)</string>
+ 	
+ 	<string name="givePermission">Precisa Dar Permissão ao app</string>
+ 	
+ 	<string name="shakeenabled">Lanterna ao Agitar Ativado!</string>
+ 	<string name="shakedesabled">Lanterna ao Agitar Desativado!</string>
+</resources>
